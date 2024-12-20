@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="home.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="countenr">
+
+        <div class="navbar">
+            <div class="mohanad"><a><span>Dev</span> Mohanad</a></div>
+
+            <div class="nav">
+
+                <a href="./index.html">من انا </a>
+                <a href="./hob.html">هواياتي </a>
+                <a href="./projects.html"> مشاريعي</a>
+                <a href="./contact.html">لتواصل معانا </a>
+                <button id="darkmodetoggle"> الوضع المضلم </button>
+
+            </div>
+                       
+        </div>
+        <h1> مهند عطيه محمد العرقوبي</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>نتشرف بزيارتكم لموقعنا الالكتروني ونتمني أن ينال اعجابكم</p>
+
+
+                <script>
+                    let togglebutton = document.getElementById("darkmodetoggle");
+                    let bodyy = document.body;
+                    togglebutton.addEventListener('click', () => {
+                        bodyy.classList.toggle('dark-mode');
+                    });
+
+                    
+                        let menu = document.getElementById("menu");
+                        let nav = document.querySelector(".nav");
+                        menu.addEventListener('click', () => {
+                            nav.classList.toggle('active');
+                        });
+                </script>
+
+    </div>
+
+
+
+</body>
+
+</html>

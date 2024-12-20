@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="contact.css" rel="stylesheet">
+    <title>هواياتي</title>
+</head>
+
+<body>
+
+    <div class="countenr">
+        <div class="navbar">
+            <div class="mohanad"><a><span>Dev</span><sub>mohana</sub><span class="D">D</span></a></div>
+            <div class="nav">
+                <a href="./index.html">من انا </a>
+                <a href="./hob.html">هواياتي </a>
+                <a href="./projects.html"> مشاريعي</a>
+                <a href="./contact.html">لتواصل معانا </a>
+                <button id="darkmodetoggle"> الوضع المضلم </button>
+            </div>
+
+        </div>
+        <div class="section">
+
+            <h1> لتواصل معانا عبر البريد الالكتروني </h1>
+            <a href="icon"><i class="fa-regular fa-user"></i></a>
+            <br>
+            <fieldset>
+                <legend>
+                    ادخال البيانات
+                </legend>
+                <p class="name">
+                    <label for="name"> name: </label>
+                    <input required name="name" id="name" type="text" placeholder="ادخال الاسم ">
+                </p>
+                <!-- input for email -->
+
+                <p class="email">
+                    <label for="email">email:</label>
+                    <input required name="email" type="email" id="email" placeholder="ادخال البريد الالكتروني">
+                </p>
+
+            </fieldset>
+            <fieldset class="box">
+                <legend> ما المشكلة</legend>
+                <input class="prob" name="prob" type="prob" id="prob" placeholder=" نرجو منكم توضيح المشكلة">
+
+            </fieldset>
+            <button class="button">ارسال الرسالة</button>
+
+        </div>
+
+        <script>
+            let togglebutton = document.getElementById("darkmodetoggle");
+            let bodyy = document.body;
+            togglebutton.addEventListener('click', () => {
+                bodyy.classList.toggle('dark-mode');
+            });
+
+
+            let menu = document.getElementById("menu");
+            let nav = document.querySelector(".nav");
+            menu.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        </script>
+
+    </div>
+
+
+
+</body>
+
+</html>

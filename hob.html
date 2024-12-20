@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="hob.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>هواياتي</title>
+</head>
+
+<body>
+    <div class="countenr">
+        <div class="navbar">
+            <div class="mohanad"><a><span>Dev</span><sub>mohana</sub><span class="D">D</span></a></div>
+            <div class="nav">
+
+                <a href="./index.html">من انا </a>
+                <a href="./hob.html">هواياتي </a>
+                <a href="./projects.html"> مشاريعي</a>
+                <a href="./contact.html">لتواصل معانا </a>
+                <button id="darkmodetoggle"> الوضع المضلم </button>
+            </div>
+            <div class="bars">
+                <i id="menu" class=" fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <section>
+
+            <div class="section">
+                <h1>سأوضح في الاسفل مدي مهارتي في لغات البرمجة :-</h1>
+
+                <div class="skillContainer">
+                    <p>C++</p>
+                    <div class="skill">
+                        <div class="skills cpp">83%</div>
+                    </div>
+                </div>
+
+
+                <div class="skillContainer">
+                    <P>Python</P>
+                    <div class="skill">
+                        <div class="skills python">71%</div>
+                    </div>
+                </div>
+
+
+
+                <div class="skillContainer">
+                    <p>Html</p>
+                    <div class="skill">
+                        <div class="skills html">90%</div>
+                    </div>
+                </div>
+
+
+
+                <div class="skillContainer">
+                    <P>Css</P>
+                    <div class="skill">
+                        <div class="skills css">86%</div>
+                    </div>
+                </div>
+
+
+
+                <div class="skillContainer">
+                    <p>Java</p>
+                    <div class="skill">
+                        <div class="skills java">65%</div>
+                    </div>
+                </div>
+
+        </section>
+
+    </div>
+
+
+    <script>
+        let togglebutton = document.getElementById("darkmodetoggle");
+        let bodyy = document.body;
+        togglebutton.addEventListener('click', () => {
+            bodyy.classList.toggle('dark-mode');
+        });
+
+
+        let menu = document.getElementById("menu");
+        let nav = document.querySelector(".nav");
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    </div>
+</body>
+
+</html>

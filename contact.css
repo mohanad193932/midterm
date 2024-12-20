@@ -1,0 +1,289 @@
+.mohanad {
+
+
+    align-content: center;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: aliceblue;
+
+
+}
+
+.mohanad a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.countenr .navbar .mohanad .D {
+    color: black;
+}
+
+
+
+
+.countenr .navbar .mohanad span {
+    color: rgb(4, 4, 4);
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: orange;
+
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    font-size: 150%;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, rgb(225, 158, 35), rgb(240, 209, 151));
+    height: 6%;
+    width: 100%;
+    margin: auto;
+}
+
+.navbar a:hover {
+
+    color: rgb(255, 253, 253);
+}
+
+
+.nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.countenr {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countenr h1 {
+    font-size: 30px;
+    color: rgb(243, 184, 73);
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.countenr .fa-regular {
+    font-size: 50px;
+    color: rgb(243, 184, 73);
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+fieldset {
+    color: rgb(225, 158, 35);
+    border-radius: 10px;
+    border: 2px solid;
+    width: 250px;
+    height: 100px;
+    position: relative;
+    margin-top: 2%;
+
+    transform: translate(-50, -50);
+    text-align: center;
+
+}
+
+fieldset legend {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+fieldset .name ::placeholder {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+fieldset .email ::placeholder {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input::placeholder {
+
+    color: rgb(225, 158, 35);
+    font-size: larger;
+    text-align: end;
+    vertical-align: text-top;
+
+}
+
+fieldset .box {
+
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: rgb(225, 158, 35);
+    position: relative;
+    margin-top: 2%;
+    left: 50%;
+
+}
+
+.box legend {
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.countenr .button {
+    background-color: rgb(249, 202, 116);
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.countenr .button:hover {
+    background-color: rgb(242, 218, 174);
+    color: rgb(5, 5, 5);
+}
+
+.box .prob {
+    width: 250px;
+    height: 100px;
+    border: 0%;
+    border-radius: 10px;
+    vertical-align: text-top;
+}
+
+.pro {
+    width: 0%;
+    height: 80%;
+    overflow: hidden;
+    margin: 20px auto;
+
+}
+
+.box ::placeholder {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.section {
+    margin-top: 10%;
+    width: 40%;
+    height: 70%;
+}
+
+.bars {
+    display: none;
+}
+
+
+.dark-mode {
+    background-color: rgb(4, 4, 4);
+
+}
+
+#darkmodetoggle {
+
+    color: rgb(244, 238, 229);
+    background-color: rgb(9, 9, 9);
+    border-radius: 5px;
+    font-weight: bold;
+
+
+
+}
+
+.dark-mode .navbar {
+
+    background: linear-gradient(to bottom, rgb(225, 158, 35), rgb(93, 85, 60));
+}
+
+.dark-mode #darkmodetoggle {
+    background-color: white;
+    color: black;
+}
+
+@media(max-width :980px) {
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .bars {
+        display: block;
+        padding-right: 10px;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: -400px;
+        flex-direction: column;
+        background: linear-gradient(to left, rgb(225, 158, 35), rgb(240, 209, 151));
+        width: 170px;
+        height: 500px;
+        border-bottom-left-radius: 10px;
+        text-align: 20px 0;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .dark-mode .nav {
+        background: linear-gradient(to top, rgb(225, 158, 35), rgb(93, 85, 60));
+    }
+
+    .countenr h1 {
+        font-size: 25px;
+    }
+
+    .section {
+
+        margin-top: 20%;
+        width: 60%;
+
+    }
+
+}

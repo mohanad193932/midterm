@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="projects.css" rel="stylesheet">
+    <title>هواياتي</title>
+</head>
+
+<body>
+    <div class="countenr">
+        <div class="navbar">
+            <div class="mohanad"><a><span>Dev</span><sub>mohana</sub><span class="D">D</span></a></div>
+            <div class="nav">
+
+                <a href="./index.html">من انا </a>
+                <a href="./hob.html">هواياتي </a>
+                <a href="./projects.html"> مشاريعي</a>
+                <a href="./contact.html">لتواصل معانا </a>
+                <button id="darkmodetoggle"> الوضع المضلم </button>
+            </div>
+            <div class="bars">
+                <i id="menu" class=" fa-solid fa-bars"></i>
+            </div>
+
+
+
+        </div>
+
+        <div class="projects">
+            <div class="proj">
+                <img src="https://th.bing.com/th/id/OIP.gzPWJ7PLl8wecKz-YSni4wHaC5?rs=1&pid=ImgDetMain" alt="">
+                <p>منظومة مبيعات</p>
+                <span>c#, visual Stodio</span>
+            </div>
+
+            <div class="proj">
+                <img src="https://th.bing.com/th/id/OIP.gzPWJ7PLl8wecKz-YSni4wHaC5?rs=1&pid=ImgDetMain" alt="">
+                <p>متجر إلكتروني</p>
+                <span>Html, CSS, JS</span>
+            </div>
+
+            <div class="proj">
+                <img src="https://th.bing.com/th/id/OIP.gzPWJ7PLl8wecKz-YSni4wHaC5?rs=1&pid=ImgDetMain" alt="">
+                <p>موقع شخصي</p>
+                <span>Html, CSS</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let togglebutton = document.getElementById("darkmodetoggle");
+        let bodyy = document.body;
+        togglebutton.addEventListener('click', () => {
+            bodyy.classList.toggle('dark-mode');
+        });
+
+        let menu = document.getElementById("menu");
+        let nav = document.querySelector(".nav");
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    </div>
+</body>
+
+</html>

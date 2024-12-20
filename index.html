@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>المشروع</title>
+</head>
+
+<body>
+
+    <div class="countenr">
+
+        <div class="navbar">
+            <div class="mohanad"><a><span>Dev</span><sub>mohana</sub><span class="D">D</span></a></div>
+            <div class="nav">
+                <a href="./index.html">من انا </a>
+                <a href="./hob.html">هواياتي </a>
+                <a href="./projects.html"> مشاريعي</a>
+                <a href="./contact.html">لتواصل معانا </a>
+                <button id="darkmodetoggle"> الوضع المضلم </button>
+            </div>
+
+        </div>
+        <div class="section">
+            <div class="me">
+                <div class="userimg"></div>
+
+            </div>
+            <div class="me1">
+                <h1>مهند عطية العرقوبي </h1>
+                <span>
+                    طالب في كلية تقنيه المعلومات جامعة المرقب بدأت الدراسة في كلية تقنية المعلومات عام 2019 ولدي شغف في
+                    تطوير
+                    تطبيقات ومواقع الويب وخبرة في هدا المجال لمدة عامين ؛ ولدي شغف ايضا بمطالعة اخر اخبار التكنولوجيا
+                    وتطورات في هدا
+                    المجال واسعي أن اكون مبرمج محترف وأقدم الاضافة لكلية تقنية المعلومات
+                    .
+                    ولدي مشاريع اخري يمكنكم الاطلاع عليها في الاسفل
+                    .
+                </span>
+                <button class="skill">مشاريعي</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        let togglebutton = document.getElementById("darkmodetoggle");
+        let bodyy = document.body;
+        togglebutton.addEventListener('click', () => {
+            bodyy.classList.toggle('dark-mode');
+        });
+
+
+        let menu = document.getElementById("menu");
+        let nav = document.querySelector(".nav");
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
